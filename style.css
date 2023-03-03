@@ -11,28 +11,118 @@ body{
 
 header{
     background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    gap:3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: x-large;
+    
 }
 
 .section2{
    display: flex;
-   flex-flow: column;
+   flex-flow: row;
    justify-content: center;
    align-items: center;
    padding: 5vh;
    gap: 1vh;
 }
 
-img{
+#mainimg{
     max-width: 75vh;
     border-radius: 1rem;
 }
+
+.leftofimage{
+    flex: 3 3 0;
+    padding: 10vw;
+}
+
+.bigimage{
+    flex: 1 1 0;
+    padding-right: 5vw;
+}
+
+#titleOfPhotos{
+    text-align: center;
+}
+
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
 .section4{
     background-color: #222831;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 1 500px;
+    align-items: center;
+    font-size: xx-large;
+    flex: 1 1 30vh;
+    padding: 10vw;
+    
+  
 }
+
+
+.section5{
+    display: flex;
+    justify-content: center;
+    background-color: #393E46;
+    padding: 3vh 5vw 3vh 5vw; 
+    
+}
+
+.form{
+    background-color: #222831;
+    padding: 10vw;
+    border-radius: 3rem; 
+    display: flex;
+
+}
+
+.left5{
+    flex: 1 1 0;
+}
+
+.right5{
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blueButton{
+    background-color: #00ADB5;
+    font-size: xx-large;
+    color: wheat;
+    border-radius: 1rem; 
+    border: 1PX solid white;
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+#blueButton:hover{
+    background-color: #00c5cf;
+    border: 2PX solid white;
+    transition-duration: 0.2s;
+}
+
+#blueButton:active{
+    background-color: #004246;
+    border: 3PX solid #00c5cf;
+}
+
 
 footer{
     background-color: #00ADB5;
@@ -41,8 +131,18 @@ footer{
     
 }
 
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+}
 
-a:hover, a:visited, a:link, a:active
+li{
+    padding: 1rem;
+}
+
+
+.links
 {
     text-decoration: none;
     color: #EEEEEE;
@@ -50,9 +150,24 @@ a:hover, a:visited, a:link, a:active
     border-radius: 25px;
 }
 
+.links:hover{
+    color: #222831;
+    transition-duration: 2s;
+    background-color: #00ADB5;
+    cursor: pointer;
+}
 
-.footlink:hover{
+
+#footlink{
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 0.5em;
+    border-radius: 25px; 
+}
+
+#footlink:hover{
     color: #00ADB5;
     transition-duration: 2s;
     background-color: #222831;
+    cursor: pointer;
 }
