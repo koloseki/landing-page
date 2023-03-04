@@ -23,12 +23,13 @@ header{
 }
 
 .section2{
+    background-color: #222831;
    display: flex;
    flex-flow: row;
    justify-content: center;
    align-items: center;
-   padding: 5vh;
    gap: 1vh;
+   flex-flow: wrap;
 }
 
 #mainimg{
@@ -42,7 +43,9 @@ header{
 }
 
 .bigimage{
-    flex: 1 1 0;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 75vh;
     padding-right: 5vw;
 }
 
@@ -53,11 +56,11 @@ header{
 .section3{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap:3vw;
+    text-align: center;
+    margin: 10vh;
 }
-
-
-
-
 
 
 
@@ -72,8 +75,17 @@ header{
     flex: 1 1 30vh;
     padding: 10vw;
     
-  
 }
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .section5{
@@ -86,14 +98,18 @@ header{
 
 .form{
     background-color: #222831;
-    padding: 10vw;
+    padding: 2vh;
     border-radius: 3rem; 
     display: flex;
+    flex-flow: wrap;
+    gap: 3vw;
+    margin: 8vh 13vw 8vh 13vw;
 
 }
 
 .left5{
     flex: 1 1 0;
+    padding-left: 5vw;
 }
 
 .right5{
@@ -106,7 +122,7 @@ header{
 #blueButton{
     background-color: #00ADB5;
     font-size: xx-large;
-    color: wheat;
+    color: #EEEEEE;
     border-radius: 1rem; 
     border: 1PX solid white;
     padding: 1vh 3vw 1vh 3vw;
@@ -116,6 +132,8 @@ header{
     background-color: #00c5cf;
     border: 2PX solid white;
     transition-duration: 0.2s;
+    cursor: pointer;
+
 }
 
 #blueButton:active{
@@ -170,4 +188,29 @@ li{
     transition-duration: 2s;
     background-color: #222831;
     cursor: pointer;
+}
+
+a{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+#imageButton{
+    background-color: #00ADB5;
+    border: 2PX solid white;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: larger;
+    border-radius: 25px; 
+    color: #EEEEEE;
+}
+
+#imageButton:hover{
+    background-color: #00c5cf;
+    transition-duration: 2s;
+    cursor: pointer;    
+}
+
+#imageButton:active{
+    background-color: #004246;
+    transition-duration: 0s;
 }
